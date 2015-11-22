@@ -41,7 +41,9 @@ class ViewController: UIViewController {
 
 ### Discussion:
 
-We subscribe to `button`'s `rx_tap` property.  `rx_tap` is an `Observable` which emits an `Event` whenever the `TouchUpInside` target/action is sent.  By subscribing, we tell `rx_tap` to run a closure anytime it emits an `Event`.  In that closure, we set `view.backgroundColor` to `greenColor`.
+We subscribe to `button`'s `rx_tap` property.  `rx_tap` is an `Observable` which emits an `Event` whenever the button gets tapped (e.g. it converts the `TouchUpInside` target/action into an RxSwift `Event`).
+
+By subscribing, we tell `rx_tap` to run a closure anytime it emits an `Event`.  In that closure, we set `view.backgroundColor` to `greenColor`.
 
 #### New Concepts
 
