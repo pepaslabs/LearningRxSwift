@@ -1,6 +1,14 @@
 # Lesson 1: Bootstrapping
 
+## Problem statement
+
 Make an app which includes RxSwift.
+
+## Solution
+
+My solution is included in the [solution](solution) folder of this repo.
+
+Open Xcode, then:
 
 `Xcode -> File -> New -> Project -> Single View Application`
 
