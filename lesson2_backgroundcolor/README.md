@@ -7,7 +7,7 @@ Make an app which:
 * Has a button
 * Changes the view's background color to green when the button is pressed.
 
-Use (problem/RxSwiftButtonBackgroundColorDemo)[problem/RxSwiftButtonBackgroundColorDemo] included in this repo as a starting point.
+Use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
 ## Solution
 
