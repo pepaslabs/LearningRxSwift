@@ -28,6 +28,6 @@ Run carthage:
 carthage update
 ```
 
-Drag the built frameworks into the "Embedded Binaries" section of the "General" tab of your project's settings screen.
+Drag the `*.framework` files from `Carthage/Build/iOS` into the "Embedded Binaries" section of the "General" tab of your project's settings screen.
 
 Verify that your app builds and runs without error.
