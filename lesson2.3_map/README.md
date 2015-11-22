@@ -46,12 +46,11 @@ class ViewController: UIViewController {
 
 ### Discussion:
 
-There is a bit of boilerplate which we must accept with RxSwift, and that is using a `DisposeBag` to properly handle memory management of the `Observable`s.
-
-Basically, anytime you subscribe to an `Observable`, the result of that subscription needs to be added to a `DisposeBag`.
+We introduce the `map` function which transforms a `Void` into a `UIColor`.  This allows us to make the closure which we pass to `subscribeNext` accept any UIColor, rather than being hard-coded to always use `greenColor`.
 
 #### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `DisposeBag.swift`
-  * Take another look at `ObservableType.swift`.  Note that `func subscribe` returns a `Disposable`.
+  * Take a look at `func map` in `Observable+StandardSequenceOperators.swift`
+  * Take a look at `func composeMap` in `Observable.swift`
+  * Take a look at `class Map` in `Map.swift`
