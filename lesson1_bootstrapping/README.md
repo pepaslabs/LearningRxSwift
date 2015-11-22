@@ -1,7 +1,4 @@
-# RxSwiftScratchSpace
-A space to doodle as I learn RxSwift
-
-## Lesson 1: Bootstrapping
+# Lesson 1: Bootstrapping
 
 Make an app which includes RxSwift.
 
