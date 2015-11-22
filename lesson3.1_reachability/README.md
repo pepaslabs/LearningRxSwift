@@ -1,4 +1,4 @@
-# Lesson 3.1: Reachability
+# Lesson 3.1: ReachabilityService
 
 ## Problem statement
 
