@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-Modify `RxSwiftButtonBackgroundColorDemo` to use the `map` function to transform the `Event` sent by `rx_tap` into a `UIColor` which by applied by the closure passed to `func subscribeNext`.
+Modify `RxSwiftButtonBackgroundColorDemo` to use the [`map`](http://rxmarbles.com/#map) function to transform the `Event` sent by `rx_tap` into a `UIColor` which by applied by the closure passed to `func subscribeNext`.
 
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 
 ### Discussion:
 
-We introduce the `map` function which transforms a `Void` into a `UIColor`.  This allows us to make the closure which we pass to `subscribeNext` accept any `UIColor`, rather than being hard-coded to always use `greenColor`.
+We introduce the [`map`](http://rxmarbles.com/#map) function which transforms a `Void` into a `UIColor`.  This allows us to make the closure which we pass to `subscribeNext` accept any `UIColor`, rather than being hard-coded to always use `greenColor`.
 
 #### New concepts to explore
 
