@@ -1,11 +1,8 @@
-# Lesson 2.1: RxSwiftButtonBackgroundColorDemo
+# Lesson 2.2: DisposeBag
 
 ## Problem statement
 
-Make an app which:
-
-* Has a button
-* Changes the view's background color to green when the button is pressed.
+Add proper memory management to the RxSwiftButtonBackgroundColorDemo from Lesson 2.1.
 
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
@@ -28,12 +25,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
     
+    var disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         button.rx_tap.subscribeNext { [weak self] () -> Void in
             self?.view.backgroundColor = UIColor.greenColor()
-        }
+        }.addDisposableTo(disposeBag)
         
     }
 }
@@ -41,16 +40,12 @@ class ViewController: UIViewController {
 
 ### Discussion:
 
-We subscribe to `button`'s `rx_tap` property.  `rx_tap` is an `Observable` which emits an `Event` whenever the button gets tapped.
+There is a bit of boilerplate which we must accept with RxSwift, and that is using a `DisposeBag` to properly handle memory management of the `Observable`s.
 
-`rx_tap`'s responsibility is to convert the `TouchUpInside` target/action into an RxSwift `Event`.
-
-By subscribing, we tell `rx_tap` to run a closure anytime it emits an `Event`.  In that closure, we set `view.backgroundColor` to `greenColor`.
+Basically, anytime you subscribe to an `Observable`, the result of that subscription needs to be added to a `DisposeBag`.
 
 #### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `Observable.swift`
-  * Take a look at `ObservableType.swift`
-  * Take a look at `Event.swift`
-
+  * Take a look at `DisposeBag.swift`
+  * Take another look at `ObservableType.swift`.  Note that `func subscribe` returns a `Disposable`.
