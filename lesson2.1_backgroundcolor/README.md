@@ -1,4 +1,4 @@
-# Lesson 2: RxSwiftButtonBackgroundColorDemo
+# Lesson 2.1: RxSwiftButtonBackgroundColorDemo
 
 ## Problem statement
 
