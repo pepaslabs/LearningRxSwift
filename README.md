@@ -1,4 +1,4 @@
-# RxSwiftScratchSpace
+# Learning RxSwift
 A space to doodle as I learn RxSwift
 
 * [Lesson 0: Download RxExample](lesson0_rxexample)
