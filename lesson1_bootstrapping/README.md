@@ -25,7 +25,7 @@ If you haven't already, [install Carthage](https://github.com/Carthage/Carthage)
 Run carthage:
 
 ```
-carthage update
+carthage update --platform iOS
 ```
 
 Drag the `*.framework` files from `Carthage/Build/iOS` into the "Embedded Binaries" section of the "General" tab of your project's settings screen.  Uncheck "Copy items if needed".
