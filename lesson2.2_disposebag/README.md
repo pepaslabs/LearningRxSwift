@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-Add proper memory management to the RxSwiftButtonBackgroundColorDemo from Lesson 2.1.
+Add proper memory management to `RxSwiftButtonBackgroundColorDemo` from Lesson 2.1.
 
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
