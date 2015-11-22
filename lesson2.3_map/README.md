@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 
 ### Discussion:
 
-We introduce the [`map`](http://rxmarbles.com/#map) function which transforms a `Void` into a `UIColor`.  This allows us to make the closure which we pass to `subscribeNext` accept any `UIColor`, rather than being hard-coded to always use `greenColor`.
+We introduce the [`map`](http://rxmarbles.com/#map) function and use it to transforms a `Void` into a `UIColor`.  This allows us to make the closure which we pass to `subscribeNext` accept any `UIColor`, rather than being hard-coded to always use `greenColor`.
 
 #### New concepts to explore
 
