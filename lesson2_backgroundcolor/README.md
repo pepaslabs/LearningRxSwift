@@ -15,6 +15,10 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 
 My solution is included in the [solution](solution) folder of this repo.
 
+**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
+
+`ViewController.swift`:
+
 ```swift
 import UIKit
 import RxSwift
@@ -35,4 +39,6 @@ class ViewController: UIViewController {
 }
 ```
 
-**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
+### Discussion:
+
+We subscribe to `button`'s `rx_tap` property.  `rx_tap` is an `Observable` which emits an `Event` whenever the `TouchUpInside` target/action is sent.  By subscribing, we tell `rx_tap` to run a closure anytime it emits an `Event`.  In that closure, we set `view.backgroundColor` to `greenColor`.
