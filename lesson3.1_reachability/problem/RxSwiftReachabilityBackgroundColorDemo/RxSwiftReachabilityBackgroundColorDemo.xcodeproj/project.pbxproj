@@ -14,15 +14,17 @@
 		2B4384751C027D8E00C0BA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4384731C027D8E00C0BA06 /* LaunchScreen.storyboard */; };
 		2B4384801C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43847F1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift */; };
 		2B43848B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43848A1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift */; };
-		2B43849B1C027DDD00C0BA06 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384981C027DDD00C0BA06 /* RxBlocking.framework */; };
-		2B43849C1C027DDD00C0BA06 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384981C027DDD00C0BA06 /* RxBlocking.framework */; };
-		2B43849D1C027DDD00C0BA06 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384981C027DDD00C0BA06 /* RxBlocking.framework */; };
-		2B43849E1C027DDD00C0BA06 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384991C027DDD00C0BA06 /* RxCocoa.framework */; };
-		2B43849F1C027DDD00C0BA06 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384991C027DDD00C0BA06 /* RxCocoa.framework */; };
-		2B4384A01C027DDD00C0BA06 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384991C027DDD00C0BA06 /* RxCocoa.framework */; };
-		2B4384A11C027DDD00C0BA06 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B43849A1C027DDD00C0BA06 /* RxSwift.framework */; };
-		2B4384A21C027DDD00C0BA06 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B43849A1C027DDD00C0BA06 /* RxSwift.framework */; };
-		2B4384A31C027DDD00C0BA06 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B43849A1C027DDD00C0BA06 /* RxSwift.framework */; };
+		2B4384A81C02800D00C0BA06 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A41C02800D00C0BA06 /* Reachability.framework */; };
+		2B4384A91C02800D00C0BA06 /* Reachability.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A41C02800D00C0BA06 /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384AA1C02800D00C0BA06 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A51C02800D00C0BA06 /* RxBlocking.framework */; };
+		2B4384AB1C02800D00C0BA06 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A51C02800D00C0BA06 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384AC1C02800D00C0BA06 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A61C02800D00C0BA06 /* RxCocoa.framework */; };
+		2B4384AD1C02800D00C0BA06 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A61C02800D00C0BA06 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384AE1C02800D00C0BA06 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A71C02800D00C0BA06 /* RxSwift.framework */; };
+		2B4384AF1C02800D00C0BA06 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A71C02800D00C0BA06 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384B21C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
+		2B4384B31C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
+		2B4384B41C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2B4384B01C02800D00C0BA06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B4384AF1C02800D00C0BA06 /* RxSwift.framework in Embed Frameworks */,
+				2B4384AD1C02800D00C0BA06 /* RxCocoa.framework in Embed Frameworks */,
+				2B4384A91C02800D00C0BA06 /* Reachability.framework in Embed Frameworks */,
+				2B4384AB1C02800D00C0BA06 /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2B4384671C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftReachabilityBackgroundColorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B43846A1C027D8E00C0BA06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +75,11 @@
 		2B4384861C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftReachabilityBackgroundColorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B43848A1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftReachabilityBackgroundColorDemoUITests.swift; sourceTree = "<group>"; };
 		2B43848C1C027D8E00C0BA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B4384981C027DDD00C0BA06 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		2B4384991C027DDD00C0BA06 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		2B43849A1C027DDD00C0BA06 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2B4384A41C02800D00C0BA06 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		2B4384A51C02800D00C0BA06 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		2B4384A61C02800D00C0BA06 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		2B4384A71C02800D00C0BA06 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2B4384B11C02805600C0BA06 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B43849E1C027DDD00C0BA06 /* RxCocoa.framework in Frameworks */,
-				2B43849B1C027DDD00C0BA06 /* RxBlocking.framework in Frameworks */,
-				2B4384A11C027DDD00C0BA06 /* RxSwift.framework in Frameworks */,
+				2B4384AE1C02800D00C0BA06 /* RxSwift.framework in Frameworks */,
+				2B4384AC1C02800D00C0BA06 /* RxCocoa.framework in Frameworks */,
+				2B4384A81C02800D00C0BA06 /* Reachability.framework in Frameworks */,
+				2B4384AA1C02800D00C0BA06 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B43849F1C027DDD00C0BA06 /* RxCocoa.framework in Frameworks */,
-				2B43849C1C027DDD00C0BA06 /* RxBlocking.framework in Frameworks */,
-				2B4384A21C027DDD00C0BA06 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,9 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4384A01C027DDD00C0BA06 /* RxCocoa.framework in Frameworks */,
-				2B43849D1C027DDD00C0BA06 /* RxBlocking.framework in Frameworks */,
-				2B4384A31C027DDD00C0BA06 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +114,10 @@
 		2B43845E1C027D8D00C0BA06 = {
 			isa = PBXGroup;
 			children = (
-				2B4384981C027DDD00C0BA06 /* RxBlocking.framework */,
-				2B4384991C027DDD00C0BA06 /* RxCocoa.framework */,
-				2B43849A1C027DDD00C0BA06 /* RxSwift.framework */,
+				2B4384A41C02800D00C0BA06 /* Reachability.framework */,
+				2B4384A51C02800D00C0BA06 /* RxBlocking.framework */,
+				2B4384A61C02800D00C0BA06 /* RxCocoa.framework */,
+				2B4384A71C02800D00C0BA06 /* RxSwift.framework */,
 				2B4384691C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo */,
 				2B43847E1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests */,
 				2B4384891C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests */,
@@ -123,6 +140,7 @@
 			children = (
 				2B43846A1C027D8E00C0BA06 /* AppDelegate.swift */,
 				2B43846C1C027D8E00C0BA06 /* ViewController.swift */,
+				2B4384B11C02805600C0BA06 /* ReachabilityService.swift */,
 				2B43846E1C027D8E00C0BA06 /* Main.storyboard */,
 				2B4384711C027D8E00C0BA06 /* Assets.xcassets */,
 				2B4384731C027D8E00C0BA06 /* LaunchScreen.storyboard */,
@@ -159,6 +177,7 @@
 				2B4384631C027D8D00C0BA06 /* Sources */,
 				2B4384641C027D8D00C0BA06 /* Frameworks */,
 				2B4384651C027D8D00C0BA06 /* Resources */,
+				2B4384B01C02800D00C0BA06 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +301,7 @@
 			files = (
 				2B43846D1C027D8E00C0BA06 /* ViewController.swift in Sources */,
 				2B43846B1C027D8E00C0BA06 /* AppDelegate.swift in Sources */,
+				2B4384B21C02805600C0BA06 /* ReachabilityService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4384B31C02805600C0BA06 /* ReachabilityService.swift in Sources */,
 				2B4384801C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4384B41C02805600C0BA06 /* ReachabilityService.swift in Sources */,
 				2B43848B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
