@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B4384271C02407200C0BA06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384261C02407200C0BA06 /* AppDelegate.swift */; };
+		2B4384291C02407200C0BA06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384281C02407200C0BA06 /* ViewController.swift */; };
+		2B43842C1C02407200C0BA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B43842A1C02407200C0BA06 /* Main.storyboard */; };
+		2B43842E1C02407200C0BA06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B43842D1C02407200C0BA06 /* Assets.xcassets */; };
+		2B4384311C02407200C0BA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B43842F1C02407200C0BA06 /* LaunchScreen.storyboard */; };
+		2B43843C1C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43843B1C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.swift */; };
+		2B4384471C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384461C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.swift */; };
+		2B4384571C02410A00C0BA06 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384541C02410A00C0BA06 /* RxBlocking.framework */; };
+		2B4384581C02410A00C0BA06 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384541C02410A00C0BA06 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384591C02410A00C0BA06 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384551C02410A00C0BA06 /* RxCocoa.framework */; };
+		2B43845A1C02410A00C0BA06 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384551C02410A00C0BA06 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B43845B1C02410A00C0BA06 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384561C02410A00C0BA06 /* RxSwift.framework */; };
+		2B43845C1C02410A00C0BA06 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384561C02410A00C0BA06 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B4384381C02407300C0BA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B43841B1C02407200C0BA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B4384221C02407200C0BA06;
+			remoteInfo = RxSwiftButtonBackgroundColorDemo;
+		};
+		2B4384431C02407300C0BA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B43841B1C02407200C0BA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B4384221C02407200C0BA06;
+			remoteInfo = RxSwiftButtonBackgroundColorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B43845D1C02410A00C0BA06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B43845A1C02410A00C0BA06 /* RxCocoa.framework in Embed Frameworks */,
+				2B4384581C02410A00C0BA06 /* RxBlocking.framework in Embed Frameworks */,
+				2B43845C1C02410A00C0BA06 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B4384231C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftButtonBackgroundColorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4384261C02407200C0BA06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B4384281C02407200C0BA06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B43842B1C02407200C0BA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B43842D1C02407200C0BA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B4384301C02407200C0BA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B4384321C02407200C0BA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4384371C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftButtonBackgroundColorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B43843B1C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftButtonBackgroundColorDemoTests.swift; sourceTree = "<group>"; };
+		2B43843D1C02407300C0BA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4384421C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftButtonBackgroundColorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4384461C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftButtonBackgroundColorDemoUITests.swift; sourceTree = "<group>"; };
+		2B4384481C02407300C0BA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4384541C02410A00C0BA06 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		2B4384551C02410A00C0BA06 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		2B4384561C02410A00C0BA06 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B4384201C02407200C0BA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384591C02410A00C0BA06 /* RxCocoa.framework in Frameworks */,
+				2B4384571C02410A00C0BA06 /* RxBlocking.framework in Frameworks */,
+				2B43845B1C02410A00C0BA06 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384341C02407300C0BA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B43843F1C02407300C0BA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B43841A1C02407200C0BA06 = {
+			isa = PBXGroup;
+			children = (
+				2B4384541C02410A00C0BA06 /* RxBlocking.framework */,
+				2B4384551C02410A00C0BA06 /* RxCocoa.framework */,
+				2B4384561C02410A00C0BA06 /* RxSwift.framework */,
+				2B4384251C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo */,
+				2B43843A1C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests */,
+				2B4384451C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests */,
+				2B4384241C02407200C0BA06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B4384241C02407200C0BA06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B4384231C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo.app */,
+				2B4384371C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.xctest */,
+				2B4384421C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B4384251C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2B4384261C02407200C0BA06 /* AppDelegate.swift */,
+				2B4384281C02407200C0BA06 /* ViewController.swift */,
+				2B43842A1C02407200C0BA06 /* Main.storyboard */,
+				2B43842D1C02407200C0BA06 /* Assets.xcassets */,
+				2B43842F1C02407200C0BA06 /* LaunchScreen.storyboard */,
+				2B4384321C02407200C0BA06 /* Info.plist */,
+			);
+			path = RxSwiftButtonBackgroundColorDemo;
+			sourceTree = "<group>";
+		};
+		2B43843A1C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B43843B1C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.swift */,
+				2B43843D1C02407300C0BA06 /* Info.plist */,
+			);
+			path = RxSwiftButtonBackgroundColorDemoTests;
+			sourceTree = "<group>";
+		};
+		2B4384451C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B4384461C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.swift */,
+				2B4384481C02407300C0BA06 /* Info.plist */,
+			);
+			path = RxSwiftButtonBackgroundColorDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B4384221C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B43844B1C02407300C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftButtonBackgroundColorDemo" */;
+			buildPhases = (
+				2B43841F1C02407200C0BA06 /* Sources */,
+				2B4384201C02407200C0BA06 /* Frameworks */,
+				2B4384211C02407200C0BA06 /* Resources */,
+				2B43845D1C02410A00C0BA06 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSwiftButtonBackgroundColorDemo;
+			productName = RxSwiftButtonBackgroundColorDemo;
+			productReference = 2B4384231C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B4384361C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B43844E1C02407300C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftButtonBackgroundColorDemoTests" */;
+			buildPhases = (
+				2B4384331C02407300C0BA06 /* Sources */,
+				2B4384341C02407300C0BA06 /* Frameworks */,
+				2B4384351C02407300C0BA06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B4384391C02407300C0BA06 /* PBXTargetDependency */,
+			);
+			name = RxSwiftButtonBackgroundColorDemoTests;
+			productName = RxSwiftButtonBackgroundColorDemoTests;
+			productReference = 2B4384371C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B4384411C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4384511C02407300C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftButtonBackgroundColorDemoUITests" */;
+			buildPhases = (
+				2B43843E1C02407300C0BA06 /* Sources */,
+				2B43843F1C02407300C0BA06 /* Frameworks */,
+				2B4384401C02407300C0BA06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B4384441C02407300C0BA06 /* PBXTargetDependency */,
+			);
+			name = RxSwiftButtonBackgroundColorDemoUITests;
+			productName = RxSwiftButtonBackgroundColorDemoUITests;
+			productReference = 2B4384421C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B43841B1C02407200C0BA06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Pepas Labs";
+				TargetAttributes = {
+					2B4384221C02407200C0BA06 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					2B4384361C02407300C0BA06 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 2B4384221C02407200C0BA06;
+					};
+					2B4384411C02407300C0BA06 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 2B4384221C02407200C0BA06;
+					};
+				};
+			};
+			buildConfigurationList = 2B43841E1C02407200C0BA06 /* Build configuration list for PBXProject "RxSwiftButtonBackgroundColorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B43841A1C02407200C0BA06;
+			productRefGroup = 2B4384241C02407200C0BA06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B4384221C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo */,
+				2B4384361C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests */,
+				2B4384411C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B4384211C02407200C0BA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384311C02407200C0BA06 /* LaunchScreen.storyboard in Resources */,
+				2B43842E1C02407200C0BA06 /* Assets.xcassets in Resources */,
+				2B43842C1C02407200C0BA06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384351C02407300C0BA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384401C02407300C0BA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B43841F1C02407200C0BA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384291C02407200C0BA06 /* ViewController.swift in Sources */,
+				2B4384271C02407200C0BA06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384331C02407300C0BA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B43843C1C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B43843E1C02407300C0BA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384471C02407300C0BA06 /* RxSwiftButtonBackgroundColorDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B4384391C02407300C0BA06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B4384221C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo */;
+			targetProxy = 2B4384381C02407300C0BA06 /* PBXContainerItemProxy */;
+		};
+		2B4384441C02407300C0BA06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B4384221C02407200C0BA06 /* RxSwiftButtonBackgroundColorDemo */;
+			targetProxy = 2B4384431C02407300C0BA06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B43842A1C02407200C0BA06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B43842B1C02407200C0BA06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B43842F1C02407200C0BA06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B4384301C02407200C0BA06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B4384491C02407300C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B43844A1C02407300C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B43844C1C02407300C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftButtonBackgroundColorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftButtonBackgroundColorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B43844D1C02407300C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftButtonBackgroundColorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftButtonBackgroundColorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2B43844F1C02407300C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RxSwiftButtonBackgroundColorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftButtonBackgroundColorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwiftButtonBackgroundColorDemo.app/RxSwiftButtonBackgroundColorDemo";
+			};
+			name = Debug;
+		};
+		2B4384501C02407300C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RxSwiftButtonBackgroundColorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftButtonBackgroundColorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwiftButtonBackgroundColorDemo.app/RxSwiftButtonBackgroundColorDemo";
+			};
+			name = Release;
+		};
+		2B4384521C02407300C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RxSwiftButtonBackgroundColorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftButtonBackgroundColorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RxSwiftButtonBackgroundColorDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2B4384531C02407300C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RxSwiftButtonBackgroundColorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftButtonBackgroundColorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RxSwiftButtonBackgroundColorDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B43841E1C02407200C0BA06 /* Build configuration list for PBXProject "RxSwiftButtonBackgroundColorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4384491C02407300C0BA06 /* Debug */,
+				2B43844A1C02407300C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B43844B1C02407300C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftButtonBackgroundColorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B43844C1C02407300C0BA06 /* Debug */,
+				2B43844D1C02407300C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B43844E1C02407300C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftButtonBackgroundColorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B43844F1C02407300C0BA06 /* Debug */,
+				2B4384501C02407300C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B4384511C02407300C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftButtonBackgroundColorDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4384521C02407300C0BA06 /* Debug */,
+				2B4384531C02407300C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B43841B1C02407200C0BA06 /* Project object */;
+}
