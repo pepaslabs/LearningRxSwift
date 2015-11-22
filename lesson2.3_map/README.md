@@ -30,8 +30,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        button.rx_tap.subscribeNext { [weak self] () -> Void in
-            self?.view.backgroundColor = UIColor.greenColor()
+        button.rx_tap.map { () -> UIColor in
+            
+            return UIColor.greenColor()
+            
+        }.subscribeNext { [weak self] (color) -> Void in
+            
+            self?.view.backgroundColor = color
+            
         }.addDisposableTo(disposeBag)
         
     }
