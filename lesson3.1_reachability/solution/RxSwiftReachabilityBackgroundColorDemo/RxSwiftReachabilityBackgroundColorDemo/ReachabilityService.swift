@@ -18,7 +18,7 @@ class ReachabilityService {
     private let reachabilityRef = try! Reachability.reachabilityForInternetConnection()
 
     private let _reachabilityChangedSubject = PublishSubject<ReachabilityStatus>()
-    private var reachabilityChanged: Observable<ReachabilityStatus> {
+    var reachabilityChanged: Observable<ReachabilityStatus> {
         get {
             return _reachabilityChangedSubject.asObservable()
         }

@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        ReachabilityService.sharedReachabilityService.reachabilityChanged.subscribeNext { [weak self] (status) -> Void in
+            switch status
+            {
+            case .Reachable:
+                self?.view.backgroundColor = UIColor.greenColor()
+            case .Unreachable:
+                self?.view.backgroundColor = UIColor.redColor()
+            }
+        }.addDisposableTo(disposeBag)
     }
 
 }
