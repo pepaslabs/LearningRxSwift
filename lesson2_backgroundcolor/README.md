@@ -15,4 +15,24 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 
 My solution is included in the [solution](solution) folder of this repo.
 
+```swift
+import UIKit
+import RxSwift
+import RxCocoa
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var button: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        button.rx_tap.subscribeNext { [weak self] () -> Void in
+            self?.view.backgroundColor = UIColor.greenColor()
+        }
+        
+    }
+}
+```
+
 **Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
