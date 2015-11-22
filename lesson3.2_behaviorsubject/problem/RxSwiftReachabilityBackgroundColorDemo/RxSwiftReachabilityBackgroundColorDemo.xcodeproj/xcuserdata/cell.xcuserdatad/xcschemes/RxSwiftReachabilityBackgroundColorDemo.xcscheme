@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0710"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2B4384661C027D8D00C0BA06"
+               BuildableName = "RxSwiftReachabilityBackgroundColorDemo.app"
+               BlueprintName = "RxSwiftReachabilityBackgroundColorDemo"
+               ReferencedContainer = "container:RxSwiftReachabilityBackgroundColorDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2B43847A1C027D8E00C0BA06"
+               BuildableName = "RxSwiftReachabilityBackgroundColorDemoTests.xctest"
+               BlueprintName = "RxSwiftReachabilityBackgroundColorDemoTests"
+               ReferencedContainer = "container:RxSwiftReachabilityBackgroundColorDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2B4384851C027D8E00C0BA06"
+               BuildableName = "RxSwiftReachabilityBackgroundColorDemoUITests.xctest"
+               BlueprintName = "RxSwiftReachabilityBackgroundColorDemoUITests"
+               ReferencedContainer = "container:RxSwiftReachabilityBackgroundColorDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2B4384661C027D8D00C0BA06"
+            BuildableName = "RxSwiftReachabilityBackgroundColorDemo.app"
+            BlueprintName = "RxSwiftReachabilityBackgroundColorDemo"
+            ReferencedContainer = "container:RxSwiftReachabilityBackgroundColorDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2B4384661C027D8D00C0BA06"
+            BuildableName = "RxSwiftReachabilityBackgroundColorDemo.app"
+            BlueprintName = "RxSwiftReachabilityBackgroundColorDemo"
+            ReferencedContainer = "container:RxSwiftReachabilityBackgroundColorDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2B4384661C027D8D00C0BA06"
+            BuildableName = "RxSwiftReachabilityBackgroundColorDemo.app"
+            BlueprintName = "RxSwiftReachabilityBackgroundColorDemo"
+            ReferencedContainer = "container:RxSwiftReachabilityBackgroundColorDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
