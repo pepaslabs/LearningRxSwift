@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B43846B1C027D8E00C0BA06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43846A1C027D8E00C0BA06 /* AppDelegate.swift */; };
+		2B43846D1C027D8E00C0BA06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43846C1C027D8E00C0BA06 /* ViewController.swift */; };
+		2B4384701C027D8E00C0BA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B43846E1C027D8E00C0BA06 /* Main.storyboard */; };
+		2B4384721C027D8E00C0BA06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4384711C027D8E00C0BA06 /* Assets.xcassets */; };
+		2B4384751C027D8E00C0BA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4384731C027D8E00C0BA06 /* LaunchScreen.storyboard */; };
+		2B4384801C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43847F1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift */; };
+		2B43848B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43848A1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift */; };
+		2B4384A81C02800D00C0BA06 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A41C02800D00C0BA06 /* Reachability.framework */; };
+		2B4384A91C02800D00C0BA06 /* Reachability.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A41C02800D00C0BA06 /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384AA1C02800D00C0BA06 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A51C02800D00C0BA06 /* RxBlocking.framework */; };
+		2B4384AB1C02800D00C0BA06 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A51C02800D00C0BA06 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384AC1C02800D00C0BA06 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A61C02800D00C0BA06 /* RxCocoa.framework */; };
+		2B4384AD1C02800D00C0BA06 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A61C02800D00C0BA06 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384AE1C02800D00C0BA06 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A71C02800D00C0BA06 /* RxSwift.framework */; };
+		2B4384AF1C02800D00C0BA06 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A71C02800D00C0BA06 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4384B21C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
+		2B4384B31C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
+		2B4384B41C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B43847C1C027D8E00C0BA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B43845F1C027D8D00C0BA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B4384661C027D8D00C0BA06;
+			remoteInfo = RxSwiftReachabilityBackgroundColorDemo;
+		};
+		2B4384871C027D8E00C0BA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B43845F1C027D8D00C0BA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B4384661C027D8D00C0BA06;
+			remoteInfo = RxSwiftReachabilityBackgroundColorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B4384B01C02800D00C0BA06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B4384AF1C02800D00C0BA06 /* RxSwift.framework in Embed Frameworks */,
+				2B4384AD1C02800D00C0BA06 /* RxCocoa.framework in Embed Frameworks */,
+				2B4384A91C02800D00C0BA06 /* Reachability.framework in Embed Frameworks */,
+				2B4384AB1C02800D00C0BA06 /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B4384671C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftReachabilityBackgroundColorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B43846A1C027D8E00C0BA06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B43846C1C027D8E00C0BA06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B43846F1C027D8E00C0BA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B4384711C027D8E00C0BA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B4384741C027D8E00C0BA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B4384761C027D8E00C0BA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B43847B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftReachabilityBackgroundColorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B43847F1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftReachabilityBackgroundColorDemoTests.swift; sourceTree = "<group>"; };
+		2B4384811C027D8E00C0BA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4384861C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftReachabilityBackgroundColorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B43848A1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftReachabilityBackgroundColorDemoUITests.swift; sourceTree = "<group>"; };
+		2B43848C1C027D8E00C0BA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4384A41C02800D00C0BA06 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		2B4384A51C02800D00C0BA06 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		2B4384A61C02800D00C0BA06 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		2B4384A71C02800D00C0BA06 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2B4384B11C02805600C0BA06 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B4384641C027D8D00C0BA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384AE1C02800D00C0BA06 /* RxSwift.framework in Frameworks */,
+				2B4384AC1C02800D00C0BA06 /* RxCocoa.framework in Frameworks */,
+				2B4384A81C02800D00C0BA06 /* Reachability.framework in Frameworks */,
+				2B4384AA1C02800D00C0BA06 /* RxBlocking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384781C027D8E00C0BA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384831C027D8E00C0BA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B43845E1C027D8D00C0BA06 = {
+			isa = PBXGroup;
+			children = (
+				2B4384A41C02800D00C0BA06 /* Reachability.framework */,
+				2B4384A51C02800D00C0BA06 /* RxBlocking.framework */,
+				2B4384A61C02800D00C0BA06 /* RxCocoa.framework */,
+				2B4384A71C02800D00C0BA06 /* RxSwift.framework */,
+				2B4384691C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo */,
+				2B43847E1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests */,
+				2B4384891C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests */,
+				2B4384681C027D8D00C0BA06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B4384681C027D8D00C0BA06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B4384671C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo.app */,
+				2B43847B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.xctest */,
+				2B4384861C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B4384691C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2B43846A1C027D8E00C0BA06 /* AppDelegate.swift */,
+				2B43846C1C027D8E00C0BA06 /* ViewController.swift */,
+				2B4384B11C02805600C0BA06 /* ReachabilityService.swift */,
+				2B43846E1C027D8E00C0BA06 /* Main.storyboard */,
+				2B4384711C027D8E00C0BA06 /* Assets.xcassets */,
+				2B4384731C027D8E00C0BA06 /* LaunchScreen.storyboard */,
+				2B4384761C027D8E00C0BA06 /* Info.plist */,
+			);
+			path = RxSwiftReachabilityBackgroundColorDemo;
+			sourceTree = "<group>";
+		};
+		2B43847E1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B43847F1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift */,
+				2B4384811C027D8E00C0BA06 /* Info.plist */,
+			);
+			path = RxSwiftReachabilityBackgroundColorDemoTests;
+			sourceTree = "<group>";
+		};
+		2B4384891C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B43848A1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift */,
+				2B43848C1C027D8E00C0BA06 /* Info.plist */,
+			);
+			path = RxSwiftReachabilityBackgroundColorDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B4384661C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B43848F1C027D8E00C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftReachabilityBackgroundColorDemo" */;
+			buildPhases = (
+				2B4384631C027D8D00C0BA06 /* Sources */,
+				2B4384641C027D8D00C0BA06 /* Frameworks */,
+				2B4384651C027D8D00C0BA06 /* Resources */,
+				2B4384B01C02800D00C0BA06 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSwiftReachabilityBackgroundColorDemo;
+			productName = RxSwiftReachabilityBackgroundColorDemo;
+			productReference = 2B4384671C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B43847A1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4384921C027D8E00C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftReachabilityBackgroundColorDemoTests" */;
+			buildPhases = (
+				2B4384771C027D8E00C0BA06 /* Sources */,
+				2B4384781C027D8E00C0BA06 /* Frameworks */,
+				2B4384791C027D8E00C0BA06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B43847D1C027D8E00C0BA06 /* PBXTargetDependency */,
+			);
+			name = RxSwiftReachabilityBackgroundColorDemoTests;
+			productName = RxSwiftReachabilityBackgroundColorDemoTests;
+			productReference = 2B43847B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B4384851C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4384951C027D8E00C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftReachabilityBackgroundColorDemoUITests" */;
+			buildPhases = (
+				2B4384821C027D8E00C0BA06 /* Sources */,
+				2B4384831C027D8E00C0BA06 /* Frameworks */,
+				2B4384841C027D8E00C0BA06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B4384881C027D8E00C0BA06 /* PBXTargetDependency */,
+			);
+			name = RxSwiftReachabilityBackgroundColorDemoUITests;
+			productName = RxSwiftReachabilityBackgroundColorDemoUITests;
+			productReference = 2B4384861C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B43845F1C027D8D00C0BA06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Pepas Labs";
+				TargetAttributes = {
+					2B4384661C027D8D00C0BA06 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					2B43847A1C027D8E00C0BA06 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 2B4384661C027D8D00C0BA06;
+					};
+					2B4384851C027D8E00C0BA06 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 2B4384661C027D8D00C0BA06;
+					};
+				};
+			};
+			buildConfigurationList = 2B4384621C027D8D00C0BA06 /* Build configuration list for PBXProject "RxSwiftReachabilityBackgroundColorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B43845E1C027D8D00C0BA06;
+			productRefGroup = 2B4384681C027D8D00C0BA06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B4384661C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo */,
+				2B43847A1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests */,
+				2B4384851C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B4384651C027D8D00C0BA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384751C027D8E00C0BA06 /* LaunchScreen.storyboard in Resources */,
+				2B4384721C027D8E00C0BA06 /* Assets.xcassets in Resources */,
+				2B4384701C027D8E00C0BA06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384791C027D8E00C0BA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384841C027D8E00C0BA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B4384631C027D8D00C0BA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B43846D1C027D8E00C0BA06 /* ViewController.swift in Sources */,
+				2B43846B1C027D8E00C0BA06 /* AppDelegate.swift in Sources */,
+				2B4384B21C02805600C0BA06 /* ReachabilityService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384771C027D8E00C0BA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384B31C02805600C0BA06 /* ReachabilityService.swift in Sources */,
+				2B4384801C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4384821C027D8E00C0BA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4384B41C02805600C0BA06 /* ReachabilityService.swift in Sources */,
+				2B43848B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B43847D1C027D8E00C0BA06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B4384661C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo */;
+			targetProxy = 2B43847C1C027D8E00C0BA06 /* PBXContainerItemProxy */;
+		};
+		2B4384881C027D8E00C0BA06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B4384661C027D8D00C0BA06 /* RxSwiftReachabilityBackgroundColorDemo */;
+			targetProxy = 2B4384871C027D8E00C0BA06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B43846E1C027D8E00C0BA06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B43846F1C027D8E00C0BA06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B4384731C027D8E00C0BA06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B4384741C027D8E00C0BA06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B43848D1C027D8E00C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B43848E1C027D8E00C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B4384901C027D8E00C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftReachabilityBackgroundColorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftReachabilityBackgroundColorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B4384911C027D8E00C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftReachabilityBackgroundColorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftReachabilityBackgroundColorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2B4384931C027D8E00C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftReachabilityBackgroundColorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftReachabilityBackgroundColorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwiftReachabilityBackgroundColorDemo.app/RxSwiftReachabilityBackgroundColorDemo";
+			};
+			name = Debug;
+		};
+		2B4384941C027D8E00C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftReachabilityBackgroundColorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftReachabilityBackgroundColorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwiftReachabilityBackgroundColorDemo.app/RxSwiftReachabilityBackgroundColorDemo";
+			};
+			name = Release;
+		};
+		2B4384961C027D8E00C0BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftReachabilityBackgroundColorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftReachabilityBackgroundColorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RxSwiftReachabilityBackgroundColorDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2B4384971C027D8E00C0BA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxSwiftReachabilityBackgroundColorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepaslabs.RxSwiftReachabilityBackgroundColorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RxSwiftReachabilityBackgroundColorDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B4384621C027D8D00C0BA06 /* Build configuration list for PBXProject "RxSwiftReachabilityBackgroundColorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B43848D1C027D8E00C0BA06 /* Debug */,
+				2B43848E1C027D8E00C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B43848F1C027D8E00C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftReachabilityBackgroundColorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4384901C027D8E00C0BA06 /* Debug */,
+				2B4384911C027D8E00C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B4384921C027D8E00C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftReachabilityBackgroundColorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4384931C027D8E00C0BA06 /* Debug */,
+				2B4384941C027D8E00C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B4384951C027D8E00C0BA06 /* Build configuration list for PBXNativeTarget "RxSwiftReachabilityBackgroundColorDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4384961C027D8E00C0BA06 /* Debug */,
+				2B4384971C027D8E00C0BA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B43845F1C027D8D00C0BA06 /* Project object */;
+}
