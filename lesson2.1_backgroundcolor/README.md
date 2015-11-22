@@ -47,7 +47,7 @@ We subscribe to `button`'s `rx_tap` property.  `rx_tap` is an `Observable` which
 
 By subscribing, we tell `rx_tap` to run a closure anytime it emits an `Event`.  In that closure, we set `view.backgroundColor` to `greenColor`.
 
-#### New Concepts
+#### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
   * Take a look at `Observable.swift`
