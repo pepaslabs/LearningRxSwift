@@ -17,16 +17,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ReachabilityService.sharedReachabilityService.reachabilityChanged.subscribeNext { [weak self] (status) -> Void in
+        ReachabilityService.sharedReachabilityService.reachabilityChanged.map { (status) -> UIColor in
             switch status
             {
             case .Reachable:
-                self?.view.backgroundColor = UIColor.greenColor()
+                return UIColor.greenColor()
             case .Unreachable:
-                self?.view.backgroundColor = UIColor.redColor()
+                return UIColor.redColor()
             }
+        }.subscribeNext { [weak self] (color) -> Void in
+            self?.view.backgroundColor = color
         }.addDisposableTo(disposeBag)
     }
 
 }
-
