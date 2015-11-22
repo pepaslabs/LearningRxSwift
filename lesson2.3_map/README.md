@@ -1,8 +1,8 @@
-# Lesson 2.2: DisposeBag
+# Lesson 2.3: map
 
 ## Problem statement
 
-Add proper memory management to `RxSwiftButtonBackgroundColorDemo` from Lesson 2.1.
+Modify `RxSwiftButtonBackgroundColorDemo` to use the `map` function to transform the `Event` sent by `rx_tap` into a `UIColor` which by applied by the closure passed to `func subscribeNext`.
 
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
