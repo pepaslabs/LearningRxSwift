@@ -18,8 +18,11 @@ My solution is included in the [solution](solution) folder of this repo.
 
 ### Discussion:
 
+We create a new object `RxReachabilityService` which is a slight variation on the `ReachabilityService` from `RxExample`.
 
-`ViewController.swift`:
+The primary changes are:
+* We use a `BehaviorSubject` rather than a `PublishSubject`, which will immediately send the current value to an observer when it subscribes.  This solves our problem from [Lesson 3.1] of the background being white until the reachability status changed.
+* We pass through the underlying `Reachability.NetworkStatus` enum, allowing subscribers to distinguish between Wifi and WWAN.
 
 ```swift
 import UIKit
@@ -57,6 +60,13 @@ class RxReachabilityService
     private let reachability: Reachability
     private let reachabilitySubject: BehaviorSubject<Reachability.NetworkStatus>
 }
+```
+
+Our `ViewController` has only superficial changes from [Lesson 3.1]:
+
+`ViewController.swift`:
+```swift
+import UIKit
 
 class ViewController: UIViewController {
 
