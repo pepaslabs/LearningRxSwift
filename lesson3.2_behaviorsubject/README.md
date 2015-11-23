@@ -25,7 +25,6 @@ The primary changes are:
 * We pass through the underlying `Reachability.NetworkStatus` enum, allowing subscribers to distinguish between Wifi and WWAN.
 
 ```swift
-import UIKit
 import RxSwift
 import RxCocoa
 import Reachability
