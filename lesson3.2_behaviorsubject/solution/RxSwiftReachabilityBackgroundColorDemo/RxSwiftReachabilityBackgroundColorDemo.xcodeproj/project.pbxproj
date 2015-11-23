@@ -22,9 +22,6 @@
 		2B4384AD1C02800D00C0BA06 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A61C02800D00C0BA06 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B4384AE1C02800D00C0BA06 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A71C02800D00C0BA06 /* RxSwift.framework */; };
 		2B4384AF1C02800D00C0BA06 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4384A71C02800D00C0BA06 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B4384B21C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
-		2B4384B31C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
-		2B4384B41C02805600C0BA06 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4384B11C02805600C0BA06 /* ReachabilityService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +76,6 @@
 		2B4384A51C02800D00C0BA06 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		2B4384A61C02800D00C0BA06 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		2B4384A71C02800D00C0BA06 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		2B4384B11C02805600C0BA06 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +136,6 @@
 			children = (
 				2B43846A1C027D8E00C0BA06 /* AppDelegate.swift */,
 				2B43846C1C027D8E00C0BA06 /* ViewController.swift */,
-				2B4384B11C02805600C0BA06 /* ReachabilityService.swift */,
 				2B43846E1C027D8E00C0BA06 /* Main.storyboard */,
 				2B4384711C027D8E00C0BA06 /* Assets.xcassets */,
 				2B4384731C027D8E00C0BA06 /* LaunchScreen.storyboard */,
@@ -301,7 +296,6 @@
 			files = (
 				2B43846D1C027D8E00C0BA06 /* ViewController.swift in Sources */,
 				2B43846B1C027D8E00C0BA06 /* AppDelegate.swift in Sources */,
-				2B4384B21C02805600C0BA06 /* ReachabilityService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4384B31C02805600C0BA06 /* ReachabilityService.swift in Sources */,
 				2B4384801C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4384B41C02805600C0BA06 /* ReachabilityService.swift in Sources */,
 				2B43848B1C027D8E00C0BA06 /* RxSwiftReachabilityBackgroundColorDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

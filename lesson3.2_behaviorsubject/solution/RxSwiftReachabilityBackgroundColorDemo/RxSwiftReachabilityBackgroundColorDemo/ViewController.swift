@@ -9,6 +9,38 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Reachability
+
+class RxReachabilityService
+{
+    static let sharedInstance = RxReachabilityService()
+    
+    var reachabilityChanged: Observable<Reachability.NetworkStatus> {
+        get {
+            return reachabilitySubject.asObservable()
+        }
+    }
+    
+    init()
+    {
+        try! reachability = Reachability.reachabilityForInternetConnection()
+
+        let up = reachability.currentReachabilityStatus
+        reachabilitySubject = BehaviorSubject<Reachability.NetworkStatus>(value: up)
+
+        let reachabilityChangedClosure: (Reachability) -> () =  { [weak self] (reachability) in
+            self?.reachabilitySubject.on(.Next(reachability.currentReachabilityStatus))
+        }
+        
+        reachability.whenReachable = reachabilityChangedClosure
+        reachability.whenUnreachable = reachabilityChangedClosure
+        
+        try! reachability.startNotifier()
+    }
+    
+    private let reachability: Reachability
+    private let reachabilitySubject: BehaviorSubject<Reachability.NetworkStatus>
+}
 
 class ViewController: UIViewController {
 
@@ -17,12 +49,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ReachabilityService.sharedReachabilityService.reachabilityChanged.map { (status) -> UIColor in
+        RxReachabilityService.sharedInstance.reachabilityChanged.map { (status) -> UIColor in
             switch status
             {
-            case .Reachable:
+            case .ReachableViaWiFi:
+                fallthrough
+            case .ReachableViaWWAN:
                 return UIColor.greenColor()
-            case .Unreachable:
+            case .NotReachable:
                 return UIColor.redColor()
             }
         }.subscribeNext { [weak self] (color) -> Void in
