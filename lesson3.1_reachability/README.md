@@ -83,7 +83,7 @@ class ViewController: UIViewController {
 Start up the app in the simulator, then toggle your Mac's wifi on and off and verify the background color changes to reflect this.
 
 However, there is a problem with this solution:
-* When the app first starts up, it doesn't recieve an `Event` from `ReachabilityService` to reflect the initial `ReachabilityStatus`.  That is, `view.backgroundColor` is white until a change in `ReachabilityStatus` occurs.  We will address this in [Lesson 3.2]().
+* When the app first starts up, it doesn't recieve an `Event` from `ReachabilityService` to reflect the initial `ReachabilityStatus`.  That is, `view.backgroundColor` is white until a change in `ReachabilityStatus` occurs.  We will address this in [Lesson 3.2](../lesson3.2_behaviorsubject).
 
 #### New concepts to explore
 
