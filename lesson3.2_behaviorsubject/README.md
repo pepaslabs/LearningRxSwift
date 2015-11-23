@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-Modify the solution to [Lesson 3.1](lesson3.1_reachability) such that `view.backgroundColor` reflects the reachability status immediately, without having to wait for a change in reachability status.
+Modify the solution to [Lesson 3.1](../lesson3.1_reachability) such that `view.backgroundColor` reflects the reachability status immediately, without having to wait for a change in reachability status.
 
 You can use [problem/RxSwiftReachabilityBackgroundColorDemo](problem/RxSwiftReachabilityBackgroundColorDemo) included in this repo as a starting point.
 
