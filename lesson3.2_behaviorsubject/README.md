@@ -22,6 +22,65 @@ My solution is included in the [solution](solution) folder of this repo.
 `ViewController.swift`:
 
 ```swift
+import UIKit
+import RxSwift
+import RxCocoa
+import Reachability
+
+class RxReachabilityService
+{
+    static let sharedInstance = RxReachabilityService()
+    
+    var reachabilityChanged: Observable<Reachability.NetworkStatus> {
+        get {
+            return reachabilitySubject.asObservable()
+        }
+    }
+    
+    init()
+    {
+        try! reachability = Reachability.reachabilityForInternetConnection()
+
+        let up = reachability.currentReachabilityStatus
+        reachabilitySubject = BehaviorSubject<Reachability.NetworkStatus>(value: up)
+
+        let reachabilityChangedClosure: (Reachability) -> () =  { [weak self] (reachability) in
+            self?.reachabilitySubject.on(.Next(reachability.currentReachabilityStatus))
+        }
+        
+        reachability.whenReachable = reachabilityChangedClosure
+        reachability.whenUnreachable = reachabilityChangedClosure
+        
+        try! reachability.startNotifier()
+    }
+    
+    private let reachability: Reachability
+    private let reachabilitySubject: BehaviorSubject<Reachability.NetworkStatus>
+}
+
+class ViewController: UIViewController {
+
+    private let disposeBag = DisposeBag()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        RxReachabilityService.sharedInstance.reachabilityChanged.map { (status) -> UIColor in
+            switch status
+            {
+            case .ReachableViaWiFi:
+                fallthrough
+            case .ReachableViaWWAN:
+                return UIColor.greenColor()
+            case .NotReachable:
+                return UIColor.redColor()
+            }
+        }.subscribeNext { [weak self] (color) -> Void in
+            self?.view.backgroundColor = color
+        }.addDisposableTo(disposeBag)
+    }
+
+}
 ```
 
 Start up the app in the simulator and verify that the background color immediately relfects the current reachability status of your Mac.
