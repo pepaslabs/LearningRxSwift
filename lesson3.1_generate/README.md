@@ -60,7 +60,7 @@ Start up the app and verify that you see an infinite stream of "hello" in the co
 
 What's going on here?  A slightly more verbose version of `InfiniteHelloGenerator` will be illustrative:
 
-```
+```swift
 class VerboseInfiniteHelloGenerator
 {
     class func generate() -> Observable<String>
