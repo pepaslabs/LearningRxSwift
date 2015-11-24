@@ -22,8 +22,10 @@ Observables:
 * [Lesson 3.6: `interval`](lesson3.6_interval)
 * [Lesson 3.7: `timer`](lesson3.7_timer)
 
+
 * [Lesson 4.1: `view.backgroundColor` set by `Reachability` status](lesson4.1_reachability)
 * [Lesson 4.2: `BehaviorSubject`](lesson4.2_behaviorsubject)
+
 
 todo:
 * scopedDispose
