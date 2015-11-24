@@ -21,6 +21,32 @@ We introduce `func generate()` and use it to create an Observable.
 `ViewController.swift`:
 
 ```swift
+import UIKit
+import RxSwift
+import RxCocoa
+
+class InfiniteHelloGenerator
+{
+    class func generate() -> Observable<String>
+    {
+        return RxSwift.generate("hello",
+                condition: { (_) -> Bool in return true},
+                iterate: { (_) -> String in return "hello" })
+    }
+}
+
+class ViewController: UIViewController {
+
+    let disposeBag = DisposeBag()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        InfiniteHelloGenerator.generate().subscribeNext { (s) -> Void in
+            debugPrint(s)
+        }.addDisposableTo(disposeBag)
+    }
+}
 ```
 
 #### New concepts to explore
