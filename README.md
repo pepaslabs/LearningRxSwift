@@ -1,18 +1,18 @@
 # Learning RxSwift
 A space to doodle as I learn RxSwift
 
-Getting started:
+Chapter 1: Getting started
 
 * [Lesson 0: Download RxExample](lesson0_rxexample)
 * [Lesson 1: Bootstrapping](lesson1_bootstrapping)
 
-A first RxSwift program:
+Chapter 2: A first RxSwift program
 
 * [Lesson 2.1: A button which changes view.backgroundColor](lesson2.1_backgroundcolor)
 * [Lesson 2.2: `DisposeBag`](lesson2.2_disposebag)
 * [Lesson 2.3: `map`](lesson2.3_map)
 
-Observables:
+Chapter 3: Observables
 
 * [Lesson 3.1: `generate`](lesson3.1_generate)
 * [Lesson 3.2: `repeatElement`](lesson3.2_repeatElement)
@@ -22,6 +22,7 @@ Observables:
 * [Lesson 3.6: `interval`](lesson3.6_interval)
 * [Lesson 3.7: `timer`](lesson3.7_timer)
 
+Chapter 4:
 
 * [Lesson 4.1: `view.backgroundColor` set by `Reachability` status](lesson4.1_reachability)
 * [Lesson 4.2: `BehaviorSubject`](lesson4.2_behaviorsubject)
