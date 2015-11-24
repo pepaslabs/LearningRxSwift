@@ -8,3 +8,7 @@ A space to doodle as I learn RxSwift
 * [Lesson 2.3: map](lesson2.3_map)
 * [Lesson 3.1: view.backgroundColor set by Reachability status](lesson3.1_reachability)
 * [Lesson 3.2: BehaviorSubject](lesson3.2_behaviorsubject)
+
+todo:
+* scopedDispose
+* takeUntil
