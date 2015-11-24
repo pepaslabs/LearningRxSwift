@@ -29,5 +29,6 @@ Chapter 4:
 
 
 todo:
+* update all of the copy/pasted readmes for chapter 3
 * scopedDispose
 * takeUntil
