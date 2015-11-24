@@ -3,12 +3,21 @@ A space to doodle as I learn RxSwift
 
 * [Lesson 0: Download RxExample](lesson0_rxexample)
 * [Lesson 1: Bootstrapping](lesson1_bootstrapping)
+
 * [Lesson 2.1: A button which changes view.backgroundColor](lesson2.1_backgroundcolor)
-* [Lesson 2.2: DisposeBag](lesson2.2_disposebag)
-* [Lesson 2.3: map](lesson2.3_map)
-* [Lesson 3.1: generate](lesson3.1_generate)
-* [Lesson 4.1: view.backgroundColor set by Reachability status](lesson4.1_reachability)
-* [Lesson 4.2: BehaviorSubject](lesson4.2_behaviorsubject)
+* [Lesson 2.2: `DisposeBag`](lesson2.2_disposebag)
+* [Lesson 2.3: `map`](lesson2.3_map)
+
+* [Lesson 3.1: `generate`](lesson3.1_generate)
+* [Lesson 3.2: `repeatElement`](lesson3.2_repeatElement)
+* [Lesson 3.3: `just`](lesson3.3_just)
+* [Lesson 3.4: `sequenceOf`](lesson3.4_sequenceOf)
+* [Lesson 3.5: `range`](lesson3.5_range)
+* [Lesson 3.6: `interval`](lesson3.6_interval)
+* [Lesson 3.7: `timer`](lesson3.7_timer)
+
+* [Lesson 4.1: `view.backgroundColor` set by `Reachability` status](lesson4.1_reachability)
+* [Lesson 4.2: `BehaviorSubject`](lesson4.2_behaviorsubject)
 
 todo:
 * scopedDispose
