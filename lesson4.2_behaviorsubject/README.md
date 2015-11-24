@@ -1,8 +1,8 @@
-# Lesson 3.2: BehaviorSubject
+# Lesson 4.2: BehaviorSubject
 
 ## Problem statement
 
-Modify the solution to [Lesson 3.1](../lesson3.1_reachability) such that `view.backgroundColor` reflects the reachability status immediately, without having to wait for a change in reachability status.
+Modify the solution to [Lesson 4.1](../lesson4.1_reachability) such that `view.backgroundColor` reflects the reachability status immediately, without having to wait for a change in reachability status.
 
 You can use [problem/RxSwiftReachabilityBackgroundColorDemo](problem/RxSwiftReachabilityBackgroundColorDemo) included in this repo as a starting point.
 
@@ -21,7 +21,7 @@ My solution is included in the [solution](solution) folder of this repo.
 We create a new object `RxReachabilityService` which is a slight variation on the `ReachabilityService` from `RxExample`.
 
 The primary changes are:
-* We use a `BehaviorSubject` rather than a `PublishSubject`, which will immediately send the current value to an observer when it subscribes.  This solves our problem from [Lesson 3.1](../lesson3.1_reachability) of the background being white until the reachability status changed.
+* We use a `BehaviorSubject` rather than a `PublishSubject`, which will immediately send the current value to an observer when it subscribes.  This solves our problem from [Lesson 4.1](../lesson4.1_reachability) of the background being white until the reachability status changed.
 * We pass through the underlying `Reachability.NetworkStatus` enum, allowing subscribers to distinguish between Wifi and WWAN.
 
 ```swift
@@ -61,7 +61,7 @@ class RxReachabilityService
 }
 ```
 
-Our `ViewController` has only superficial changes from [Lesson 3.1](../lesson3.1_reachability):
+Our `ViewController` has only superficial changes from [Lesson 4.1](../lesson4.1_reachability):
 
 `ViewController.swift`:
 ```swift
