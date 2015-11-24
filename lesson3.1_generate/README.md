@@ -58,6 +58,43 @@ Start up the app and verify that you see an infinite stream of "hello" in the co
 ...
 ```
 
+What's going on here?  A slightly more verbose version of `InfiniteHelloGenerator` will be illustrative:
+
+```
+class VerboseInfiniteHelloGenerator
+{
+    class func generate() -> Observable<String>
+    {
+        return RxSwift.generate("hello", condition: { (s) -> Bool in
+            
+            debugPrint("condition closure.  s: \(s)")
+            return true
+            
+        }, iterate: { (s) -> String in
+            
+            debugPrint("iterate closure.  s: \(s)")
+            return s
+            
+        })
+    }
+}
+```
+
+Hook that up to `ViewController`, fire that up in the simulator and you should see this in the console:
+
+```
+"condition closure.  s: hello"
+"hello"
+"iterate closure.  s: hello"
+"condition closure.  s: hello"
+"hello"
+"iterate closure.  s: hello"
+"condition closure.  s: hello"
+"hello"
+"iterate closure.  s: hello"
+...
+```
+
 #### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
