@@ -1,8 +1,8 @@
-# Lesson 3.1: generate
+# Lesson 3.2: repeatElement
 
 ## Problem statement
 
-Write an app which spits out an infinite series of "hello" messages to the debugging console.
+Write an app which spits out an infinite series of "hello" messages to the debugging console, using `func repeatElement`.
 
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
@@ -16,7 +16,9 @@ My solution is included in the [solution](solution) folder of this repo.
 
 ### Discussion:
 
-We introduce `func generate()`, use it to create an `Observable<String>`, and our `ViewController` subscribes to its stream of `Event<String>`.
+RxSwift includes a number of convenience variations on `func generate`, and the rest of this chapter will be about exploring those.
+
+Here, we use `func repeatElement`, which truly makes the implementation of `InfiniteHelloGenerator` trivial:
 
 `ViewController.swift`:
 
@@ -29,9 +31,7 @@ class InfiniteHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        return RxSwift.generate("hello",
-                condition: { (_) -> Bool in return true},
-                iterate: { (s) -> String in return s })
+        return RxSwift.repeatElement("hello", MainScheduler.sharedInstance)
     }
 }
 
@@ -58,44 +58,7 @@ Start up the app and verify that you see an infinite stream of "hello" in the co
 ...
 ```
 
-What's going on here?  A slightly more verbose version of `InfiniteHelloGenerator` will be illustrative:
-
-```swift
-class VerboseInfiniteHelloGenerator
-{
-    class func generate() -> Observable<String>
-    {
-        return RxSwift.generate("hello", condition: { (s) -> Bool in
-            
-            debugPrint("condition closure.  s: \(s)")
-            return true
-            
-        }, iterate: { (s) -> String in
-            
-            debugPrint("iterate closure.  s: \(s)")
-            return s
-            
-        })
-    }
-}
-```
-
-Hook that up to `ViewController`, fire that up in the simulator and you should see this in the console:
-
-```
-"condition closure.  s: hello"
-"hello"
-"iterate closure.  s: hello"
-"condition closure.  s: hello"
-"hello"
-"iterate closure.  s: hello"
-"condition closure.  s: hello"
-"hello"
-"iterate closure.  s: hello"
-...
-```
-
 #### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `func generate` in `Observable+Creation.swift`
+  * Take a look at `func repeatElement` in `Observable+Creation.swift`
