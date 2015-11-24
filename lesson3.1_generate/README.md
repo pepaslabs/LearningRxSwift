@@ -16,7 +16,7 @@ My solution is included in the [solution](solution) folder of this repo.
 
 ### Discussion:
 
-We introduce `func generate()` and use it to create an Observable.
+We introduce `func generate()`, use it to create an `Observable<String>`, and our `ViewController` subscribes to its stream of `Event<String>`.
 
 `ViewController.swift`:
 
