@@ -49,6 +49,15 @@ class ViewController: UIViewController {
 }
 ```
 
+Start up the app and verify that you see an infinite stream of "hello" in the console:
+
+```
+"hello"
+"hello"
+"hello"
+...
+```
+
 #### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
