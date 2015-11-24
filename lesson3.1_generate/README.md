@@ -31,7 +31,7 @@ class InfiniteHelloGenerator
     {
         return RxSwift.generate("hello",
                 condition: { (_) -> Bool in return true},
-                iterate: { (_) -> String in return "hello" })
+                iterate: { (s) -> String in return s })
     }
 }
 
