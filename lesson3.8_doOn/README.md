@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-Modiy the solution from [Lesson 3.6]() to produce a side-effect for each "hello" which is generated, using 'func doOn'.
+Modiy the solution from [Lesson 3.6](../lesson3.6_interval) to produce a side-effect for each "hello" which is generated, using 'func doOn'.
 
 ### Problem project
 
@@ -15,6 +15,40 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 `ViewController.swift`:
 
 ```swift
+import UIKit
+import RxSwift
+import RxCocoa
+
+class TickHelloGenerator
+{
+    class func generate() -> Observable<String>
+    {
+        let tickerObservable = interval(1, MainScheduler.sharedInstance)
+        
+        let sideEffectingObservable = tickerObservable.doOn { (_) -> Void in
+            debugPrint("side-effect")
+        }
+        
+        let helloObservable = sideEffectingObservable.map({ (_) -> String in
+            return "hello"
+        })
+        
+        return helloObservable
+    }
+}
+
+class ViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        TickHelloGenerator.generate().subscribeNext { (s) -> Void in
+            debugPrint(s)
+        }.addDisposableTo(disposeBag)
+    }
+}
 ```
 
 ### Discussion:
@@ -32,8 +66,30 @@ Start up the app and verify that you see a side-effect message for each "hello" 
 "hello"
 ```
 
+We can write a wrapper function which effectively renames `func doOn` as `func sideEffect` to make this more explicit.  Here's an example of doing so, with some more terse `Observable` chaining syntax:
+
 ```swift
-FIXME create a sideEffect function alias here
+extension ObservableType
+{
+    public func sideEffect(eventHandler: (RxSwift.Event<Self.E>) throws -> Void) -> RxSwift.Observable<Self.E>
+    {
+        return doOn(eventHandler)
+    }
+}
+
+class TickHelloGenerator2
+{
+    class func generate() -> Observable<String>
+    {
+        return interval(1, MainScheduler.sharedInstance)
+            .sideEffect({ (_) -> Void in
+                debugPrint("side-effect")
+            })
+            .map({ (_) -> String in
+                return "hello"
+            })
+    }
+}
 ```
 
 ### New concepts to explore
