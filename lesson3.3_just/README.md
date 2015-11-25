@@ -1,4 +1,4 @@
-# Lesson 3.3: just
+# Lesson 3.3: `just`
 
 ## Problem statement
 
