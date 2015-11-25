@@ -1,4 +1,4 @@
-# Lesson 2.2: DisposeBag
+# Lesson 2.2: `DisposeBag`
 
 ## Problem statement
 
