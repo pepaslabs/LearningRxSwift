@@ -66,7 +66,7 @@ Start up the app and verify that you see a side-effect message for each "hello" 
 "hello"
 ```
 
-We can write a wrapper function which effectively renames `func doOn` as `func sideEffect` to make this more explicit.  Here's an example of doing so, with some more terse `Observable` chaining syntax:
+We can write a wrapper function which effectively renames `func doOn` as `func sideEffect` to make this more explicit.  Here's an example of doing so, along with some more terse `Observable` chaining syntax:
 
 ```swift
 extension ObservableType
