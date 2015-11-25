@@ -4,15 +4,14 @@
 
 Modify `RxSwiftButtonBackgroundColorDemo` to use the [`map`](http://rxmarbles.com/#map) function to transform the `Event` sent by `rx_tap` into a `UIColor` which by applied by the closure passed to `func subscribeNext`.
 
+### Problem project
+
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
 **Note**: I have omitted the `Carthage` folder from the problem project, because it includes large binary files.  In order to use the this project, you will need to run `carthage update --platform iOS`.
 
 ## Solution
 
-My solution is included in the [solution](solution) folder of this repo.
-
-**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
 
 `ViewController.swift`:
 
@@ -48,9 +47,15 @@ class ViewController: UIViewController {
 
 We introduce the [`map`](http://rxmarbles.com/#map) function and use it to transforms a `Void` into a `UIColor`.  This allows us to make the closure which we pass to `subscribeNext` accept any `UIColor`, rather than being hard-coded to always use `greenColor`.
 
-#### New concepts to explore
+### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
   * Take a look at `func map` in `Observable+StandardSequenceOperators.swift`
   * Take a look at `func composeMap` in `Observable.swift`
   * Take a look at `class Map` in `Map.swift`
+
+### Solution project
+
+My solution is included in the [solution](solution) folder of this repo.
+
+**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
