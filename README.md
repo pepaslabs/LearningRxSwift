@@ -32,4 +32,5 @@ todo:
 * scopedDispose
 * takeUntil
 * deferred
+* doOn
 * refactor repo title and all chapter titles to be "katas"
