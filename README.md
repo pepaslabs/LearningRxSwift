@@ -32,3 +32,4 @@ todo:
 * update all of the copy/pasted readmes for chapter 3
 * scopedDispose
 * takeUntil
+* refactor repo title and all chapter titles to be "katas"
