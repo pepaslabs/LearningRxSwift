@@ -6,7 +6,7 @@ Add proper memory management to `RxSwiftButtonBackgroundColorDemo` from Lesson 2
 
 ### Problem project
 
-You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
+You can use the project in the [problem](problem) folder of this repo as a starting point.
 
 **Note**: I have omitted the `Carthage` folder from the problem project, because it includes large binary files.  In order to use the this project, you will need to run `carthage update --platform iOS`.
 

@@ -6,7 +6,7 @@ Modify the solution to [Lesson 4.1](../lesson4.1_reachability) such that `view.b
 
 ### Problem project
 
-You can use [problem/RxSwiftReachabilityBackgroundColorDemo](problem/RxSwiftReachabilityBackgroundColorDemo) included in this repo as a starting point.
+You can use the project in the [problem](problem) folder of this repo as a starting point.
 
 I have added a dependency against [Reachability.swift](https://github.com/ashleymills/Reachability.swift) to the `Cartfile`, and I have pulled in a copy of `ReachabilityService.swift` from `RxExample`.
 
