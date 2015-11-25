@@ -10,13 +10,17 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class DelayedSingleHelloGenerator
+class TickHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        let delayedObservable = timer(3, MainScheduler.sharedInstance)
+        let tickerObservable = interval(1, MainScheduler.sharedInstance)
         
-        let helloObservable = delayedObservable.map({ (_) -> String in
+        let sideEffectingObservable = tickerObservable.doOn { (_) -> Void in
+            debugPrint("side-effect")
+        }
+        
+        let helloObservable = sideEffectingObservable.map({ (_) -> String in
             return "hello"
         })
         
@@ -24,28 +28,36 @@ class DelayedSingleHelloGenerator
     }
 }
 
-class DelayedTickHelloGenerator
+extension ObservableType
+{
+    public func sideEffect(eventHandler: (RxSwift.Event<Self.E>) throws -> Void) -> RxSwift.Observable<Self.E>
+    {
+        return doOn(eventHandler)
+    }
+}
+
+class TickHelloGenerator2
 {
     class func generate() -> Observable<String>
     {
-        let tickerObservable = timer(3.0, 1.0, MainScheduler.sharedInstance)
-        
-        let helloObservable = tickerObservable.map { (_) -> String in
-            return "hello"
-        }
-        
-        return helloObservable
+        return interval(1, MainScheduler.sharedInstance)
+            .sideEffect({ (_) -> Void in
+                debugPrint("side-effect")
+            })
+            .map({ (_) -> String in
+                return "hello"
+            })
     }
 }
 
 class ViewController: UIViewController {
-
+    
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DelayedSingleHelloGenerator.generate().subscribeNext { (s) -> Void in
+        TickHelloGenerator.generate().subscribeNext { (s) -> Void in
             debugPrint(s)
         }.addDisposableTo(disposeBag)
     }

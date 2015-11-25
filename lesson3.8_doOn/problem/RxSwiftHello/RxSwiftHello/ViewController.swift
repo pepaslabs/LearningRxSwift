@@ -7,10 +7,32 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+
+class TickHelloGenerator
+{
+    class func generate() -> Observable<String>
+    {
+        let tickerObservable = interval(1, MainScheduler.sharedInstance)
+        
+        let helloObservable = tickerObservable.map({ (_) -> String in
+            return "hello"
+        })
+        
+        return helloObservable
+    }
+}
 
 class ViewController: UIViewController {
-
+    
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        TickHelloGenerator.generate().subscribeNext { (s) -> Void in
+            debugPrint(s)
+            }.addDisposableTo(disposeBag)
     }
 }
