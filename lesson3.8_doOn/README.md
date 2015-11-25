@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-Modiy the solution from [Lesson 3.6](../lesson3.6_interval) to produce a side-effect for each "hello" which is generated, using 'func doOn'.
+Modiy the solution from [Lesson 3.6](../lesson3.6_interval) to produce a side-effect for each "hello" which is generated, using `func doOn`.
 
 ### Problem project
 
