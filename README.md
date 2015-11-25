@@ -21,6 +21,7 @@ Chapter 3: Observables
 * [Lesson 3.5: `range`](lesson3.5_range)
 * [Lesson 3.6: `interval`](lesson3.6_interval)
 * [Lesson 3.7: `timer`](lesson3.7_timer)
+* [Lesson 3.8: side-effects: `doOn`](lesson3.8_doOn)
 
 Chapter 4:
 
