@@ -12,10 +12,6 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 
 ## Solution
 
-### Discussion:
-
-We introduce `func generate()`, use it to create an `Observable<String>`, and our `ViewController` subscribes to its stream of `Event<String>`.
-
 `ViewController.swift`:
 
 ```swift
@@ -46,6 +42,10 @@ class ViewController: UIViewController {
     }
 }
 ```
+
+### Discussion:
+
+We introduce `func generate()`, use it to create an `Observable<String>`, and our `ViewController` subscribes to its stream of `Event<String>`.
 
 Start up the app and verify that you see an infinite stream of "hello" in the console:
 
