@@ -73,7 +73,6 @@ class ViewController: UIViewController {
             self?.view.backgroundColor = color
         }.addDisposableTo(disposeBag)
     }
-
 }
 ```
 
