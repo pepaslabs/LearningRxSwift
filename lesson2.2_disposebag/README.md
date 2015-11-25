@@ -42,6 +42,8 @@ class ViewController: UIViewController {
 }
 ```
 
+FIXME: is `[weak self]` actually needed in the context of RxSwift?
+
 ### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
