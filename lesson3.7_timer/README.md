@@ -57,6 +57,24 @@ Start up the app and verify that you see a single "hello" after a 3 second delay
 "hello"
 ```
 
+The `timer` function has a second interface which also includes an initial delay value.  We can combine the functionality of lesson 3.6 and 3.7 together to generate an infinite stream of one-second interval "hello" messages which start after a 3 second delay:
+
+```swift
+class DelayedTickHelloGenerator
+{
+    class func generate() -> Observable<String>
+    {
+        let tickerObservable = timer(3.0, 1.0, MainScheduler.sharedInstance)
+        
+        let helloObservable = tickerObservable.map { (_) -> String in
+            return "hello"
+        }
+        
+        return helloObservable
+    }
+}
+```
+
 ### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
