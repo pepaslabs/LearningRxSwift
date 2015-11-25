@@ -24,6 +24,20 @@ class DelayedSingleHelloGenerator
     }
 }
 
+class DelayedTickHelloGenerator
+{
+    class func generate() -> Observable<String>
+    {
+        let tickerObservable = timer(3.0, 1.0, MainScheduler.sharedInstance)
+        
+        let helloObservable = tickerObservable.map { (_) -> String in
+            return "hello"
+        }
+        
+        return helloObservable
+    }
+}
+
 class ViewController: UIViewController {
 
     let disposeBag = DisposeBag()
