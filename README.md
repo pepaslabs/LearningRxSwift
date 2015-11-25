@@ -33,4 +33,5 @@ todo:
 * scopedDispose
 * takeUntil
 * deferred
-* refactor repo title and all chapter titles to be "katas"
+* flatMap
+* refactor repo title and all chapter titles to be "katas"?
