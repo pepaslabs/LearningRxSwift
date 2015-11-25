@@ -1,24 +1,16 @@
-# Lesson 3.2: repeatElement
+# Lesson 3.6: `interval`
 
 ## Problem statement
 
-Write an app which spits out an infinite series of "hello" messages to the debugging console, using `func repeatElement`.
+Write an app which spits out a "hello" message once per second, using `func interval`.
+
+### Problem project
 
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
 **Note**: I have omitted the `Carthage` folder from the problem project, because it includes large binary files.  In order to use the this project, you will need to run `carthage update --platform iOS`.
 
 ## Solution
-
-My solution is included in the [solution](solution) folder of this repo.
-
-**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
-
-### Discussion:
-
-RxSwift includes a number of convenience variations on `func generate`, and the rest of this chapter will be about exploring those.
-
-Here, we use `func repeatElement`, which truly makes the implementation of `InfiniteHelloGenerator` trivial:
 
 `ViewController.swift`:
 
@@ -27,11 +19,17 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class InfiniteHelloGenerator
+class TickHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        return RxSwift.repeatElement("hello", MainScheduler.sharedInstance)
+        let tickerObservable = interval(1, MainScheduler.sharedInstance)
+
+        let helloObservable = tickerObservable.map({ (_) -> String in
+            return "hello"
+        })
+        
+        return helloObservable
     }
 }
 
@@ -42,14 +40,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        InfiniteHelloGenerator.generate().subscribeNext { (s) -> Void in
+        TickHelloGenerator.generate().subscribeNext { (s) -> Void in
             debugPrint(s)
         }.addDisposableTo(disposeBag)
     }
 }
 ```
 
-Start up the app and verify that you see an infinite stream of "hello" in the console:
+### Discussion:
+
+Here, we use `func interval` to generate one event per second, which we then `map` into a "hello" message.
+
+Start up the app and verify that you see one "hello" per second in the console:
 
 ```
 "hello"
@@ -58,7 +60,14 @@ Start up the app and verify that you see an infinite stream of "hello" in the co
 ...
 ```
 
-#### New concepts to explore
+### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `func repeatElement` in `Observable+Creation.swift`
+  * Take a look at `func interval` in `Observable+Creation.swift`
+
+### Solution project
+
+My solution is included in the [solution](solution) folder of this repo.
+
+**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
+
