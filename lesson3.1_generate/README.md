@@ -4,15 +4,13 @@
 
 Write an app which spits out an infinite series of "hello" messages to the debugging console.
 
+### Problem project
+
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
 **Note**: I have omitted the `Carthage` folder from the problem project, because it includes large binary files.  In order to use the this project, you will need to run `carthage update --platform iOS`.
 
 ## Solution
-
-My solution is included in the [solution](solution) folder of this repo.
-
-**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
 
 ### Discussion:
 
@@ -95,7 +93,14 @@ Hook that up to `ViewController`, fire that up in the simulator and you should s
 ...
 ```
 
-#### New concepts to explore
+### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
   * Take a look at `func generate` in `Observable+Creation.swift`
+
+### Solution project
+
+My solution is included in the [solution](solution) folder of this repo.
+
+**Note**: I have omitted the `Carthage` folder from the solution project, because it includes large binary files.  In order to run the this project, you will need to run `carthage update --platform iOS`.
+
