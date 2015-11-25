@@ -1,4 +1,4 @@
-# Lesson 2.3: map
+# Lesson 2.3: `map`
 
 ## Problem statement
 
