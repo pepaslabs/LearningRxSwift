@@ -1,4 +1,4 @@
-# Lesson 3.2: repeatElement
+# Lesson 3.2: `repeatElement`
 
 ## Problem statement
 
