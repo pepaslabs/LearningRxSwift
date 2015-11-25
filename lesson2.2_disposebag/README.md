@@ -12,12 +12,6 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 
 ## Solution
 
-### Discussion:
-
-There is a bit of boilerplate which we must accept with RxSwift, and that is using a `DisposeBag` to properly handle memory management of the `Observable`s.
-
-Basically, anytime you subscribe to an `Observable`, the result of that subscription needs to be added to a `DisposeBag`.
-
 `ViewController.swift`:
 
 ```swift
@@ -41,6 +35,12 @@ class ViewController: UIViewController {
     }
 }
 ```
+
+### Discussion:
+
+There is a bit of boilerplate which we must accept with RxSwift, and that is using a `DisposeBag` to properly handle memory management of the `Observable`s.
+
+Basically, anytime you subscribe to an `Observable`, the result of that subscription needs to be added to a `DisposeBag`.
 
 FIXME: is `[weak self]` actually needed in the context of RxSwift?
 
