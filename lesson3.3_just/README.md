@@ -1,8 +1,8 @@
-# Lesson 3.2: repeatElement
+# Lesson 3.3: just
 
 ## Problem statement
 
-Write an app which spits out an infinite series of "hello" messages to the debugging console, using `func repeatElement`.
+Write an app which spits out a single "hello" message to the debugging console, using `func just`.
 
 You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBackgroundColorDemo) included in this repo as a starting point.
 
@@ -16,9 +16,7 @@ My solution is included in the [solution](solution) folder of this repo.
 
 ### Discussion:
 
-RxSwift includes a number of convenience variations on `func generate`, and the rest of this chapter will be about exploring those.
-
-Here, we use `func repeatElement`, which truly makes the implementation of `InfiniteHelloGenerator` trivial:
+Here, we use `func just` to generate just one "hello" `Event<String>`.
 
 `ViewController.swift`:
 
@@ -27,11 +25,11 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class InfiniteHelloGenerator
+class SingleHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        return RxSwift.repeatElement("hello", MainScheduler.sharedInstance)
+        return just("hello")
     }
 }
 
@@ -42,23 +40,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        InfiniteHelloGenerator.generate().subscribeNext { (s) -> Void in
+        SingleHelloGenerator.generate().subscribeNext { (s) -> Void in
             debugPrint(s)
         }.addDisposableTo(disposeBag)
     }
 }
 ```
 
-Start up the app and verify that you see an infinite stream of "hello" in the console:
+Start up the app and verify that you see only one "hello" in the console:
 
 ```
 "hello"
-"hello"
-"hello"
-...
 ```
 
 #### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `func repeatElement` in `Observable+Creation.swift`
+  * Take a look at `func just` in `Observable+Creation.swift`
