@@ -10,11 +10,11 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class TripleHelloGenerator
+class OneHundredHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        let intsObservable = RxSwift.range(0, 100)
+        let intsObservable = range(0, 100)
         
         let helloObservable = intsObservable.map({ (_) -> String in
             return "hello"
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        TripleHelloGenerator.generate().subscribeNext { (s) -> Void in
+        OneHundredHelloGenerator.generate().subscribeNext { (s) -> Void in
             debugPrint(s)
         }.addDisposableTo(disposeBag)
     }

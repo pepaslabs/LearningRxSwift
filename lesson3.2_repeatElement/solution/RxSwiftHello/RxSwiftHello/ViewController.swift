@@ -14,7 +14,7 @@ class InfiniteHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        return RxSwift.repeatElement("hello", MainScheduler.sharedInstance)
+        return repeatElement("hello", MainScheduler.sharedInstance)
     }
 }
 

@@ -14,7 +14,7 @@ class TickHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        let tickerObservable = RxSwift.interval(1, MainScheduler.sharedInstance)
+        let tickerObservable = interval(1, MainScheduler.sharedInstance)
 
         let helloObservable = tickerObservable.map({ (_) -> String in
             return "hello"

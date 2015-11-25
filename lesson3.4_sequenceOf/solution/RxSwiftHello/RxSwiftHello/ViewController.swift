@@ -14,7 +14,7 @@ class TripleHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        return RxSwift.sequenceOf("hello","hello","hello")
+        return sequenceOf("hello","hello","hello")
     }
 }
 

@@ -14,7 +14,7 @@ class SingleHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        return RxSwift.just("hello")
+        return just("hello")
     }
 }
 
