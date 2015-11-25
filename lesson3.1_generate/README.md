@@ -1,4 +1,4 @@
-# Lesson 3.1: generate
+# Lesson 3.1: `generate`
 
 ## Problem statement
 
