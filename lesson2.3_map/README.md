@@ -12,7 +12,6 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 
 ## Solution
 
-
 `ViewController.swift`:
 
 ```swift
