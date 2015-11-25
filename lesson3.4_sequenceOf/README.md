@@ -12,10 +12,6 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 
 ## Solution
 
-### Discussion:
-
-Here, we use `func sequenceOf`, to generate only three "hello" messages:
-
 `ViewController.swift`:
 
 ```swift
@@ -44,6 +40,10 @@ class ViewController: UIViewController {
     }
 }
 ```
+
+### Discussion:
+
+Here, we use `func sequenceOf`, to generate only three "hello" messages:
 
 Start up the app and verify that you see three "hello" messages in the console:
 
