@@ -1,8 +1,8 @@
-# Lesson 3.7: `timer`
+# Lesson 3.8: side-effects: `doOn`
 
 ## Problem statement
 
-Write an app which spits out a single "hello" message after a 3 second delay, using `func timer`.
+Modiy the solution from [Lesson 3.6](../lesson3.6_interval) to produce a side-effect for each "hello" which is generated, using `func doOn`.
 
 ### Problem project
 
@@ -19,13 +19,17 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class DelayedSingleHelloGenerator
+class TickHelloGenerator
 {
     class func generate() -> Observable<String>
     {
-        let delayedObservable = timer(3, MainScheduler.sharedInstance)
+        let tickerObservable = interval(1, MainScheduler.sharedInstance)
         
-        let helloObservable = delayedObservable.map({ (_) -> String in
+        let sideEffectingObservable = tickerObservable.doOn { (_) -> Void in
+            debugPrint("side-effect")
+        }
+        
+        let helloObservable = sideEffectingObservable.map({ (_) -> String in
             return "hello"
         })
         
@@ -34,13 +38,13 @@ class DelayedSingleHelloGenerator
 }
 
 class ViewController: UIViewController {
-
+    
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DelayedSingleHelloGenerator.generate().subscribeNext { (s) -> Void in
+        TickHelloGenerator.generate().subscribeNext { (s) -> Void in
             debugPrint(s)
         }.addDisposableTo(disposeBag)
     }
@@ -49,28 +53,41 @@ class ViewController: UIViewController {
 
 ### Discussion:
 
-Here, we use `func timer` to generate a single `Event` after a 3 second delay, which we then map to a "hello" message.
+Here, we use `func doOn` to produce a side-effect for each `Event` which propogates through the `Observable` chain.
 
-Start up the app and verify that you see a single "hello" after a 3 second delay:
+Start up the app and verify that you see a side-effect message for each "hello" message:
 
 ```
+"side-effect"
+"hello"
+"side-effect"
+"hello"
+"side-effect"
 "hello"
 ```
 
-The `timer` function also has a second interface which includes an initial delay value.  We can combine the functionality of lesson 3.6 and 3.7 together to generate an infinite stream of one-second interval "hello" messages which start after a 3 second delay:
+We can write a wrapper function which effectively renames `func doOn` as `func sideEffect` to make this more explicit.  Here's an example of doing so, along with some more terse `Observable` chaining syntax:
 
 ```swift
-class DelayedTickHelloGenerator
+extension ObservableType
+{
+    public func sideEffect(eventHandler: (RxSwift.Event<Self.E>) throws -> Void) -> RxSwift.Observable<Self.E>
+    {
+        return doOn(eventHandler)
+    }
+}
+
+class TickHelloGenerator2
 {
     class func generate() -> Observable<String>
     {
-        let tickerObservable = timer(3.0, 1.0, MainScheduler.sharedInstance)
-        
-        let helloObservable = tickerObservable.map { (_) -> String in
-            return "hello"
-        }
-        
-        return helloObservable
+        return interval(1, MainScheduler.sharedInstance)
+            .sideEffect({ (_) -> Void in
+                debugPrint("side-effect")
+            })
+            .map({ (_) -> String in
+                return "hello"
+            })
     }
 }
 ```
@@ -78,7 +95,8 @@ class DelayedTickHelloGenerator
 ### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `func timer` in `Observable+Creation.swift`
+  * Take a look at `func doOn` in `Observable+Single.swift`
+  * Take a look at `class Do` in `Do.swift`
 
 ### Solution project
 
