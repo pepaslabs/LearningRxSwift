@@ -16,6 +16,10 @@ I have added a dependency against [Reachability.swift](https://github.com/ashley
 
 ## Solution
 
+### Discussion:
+
+Here, we subscribe to the `ReachabilityService` from `RxExample` and set the background color accordingly:
+
 `ViewController.swift`:
 
 ```swift
@@ -42,10 +46,6 @@ class ViewController: UIViewController {
     }
 }
 ```
-
-### Discussion:
-
-Here, we subscribe to the `ReachabilityService` from `RxExample` and set the background color accordingly:
 
 However, our closure is both converting a `ReachabilityStatus` into a `UIColor`, and applying that color to `view.backgroundColor`.  We can separate these two concerns by using the [`map`](http://rxmarbles.com/#map) function:
 
