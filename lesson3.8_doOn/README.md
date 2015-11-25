@@ -95,7 +95,7 @@ class TickHelloGenerator2
 ### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `func doOn` in `Observable+Creation.swift`
+  * Take a look at `func doOn` in `Observable+Single.swift`
 
 ### Solution project
 
