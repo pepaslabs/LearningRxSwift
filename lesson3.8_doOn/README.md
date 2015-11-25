@@ -1,8 +1,8 @@
-# Lesson 3.7: `timer`
+# Lesson 3.8: side-effects: `doOn`
 
 ## Problem statement
 
-Write an app which spits out a single "hello" message after a 3 second delay, using `func timer`.
+Modiy the solution from [Lesson 3.6]() to produce a side-effect for each "hello" which is generated, using 'func doOn'.
 
 ### Problem project
 
@@ -15,70 +15,31 @@ You can use [problem/RxSwiftButtonBackgroundColorDemo](problem/RxSwiftButtonBack
 `ViewController.swift`:
 
 ```swift
-import UIKit
-import RxSwift
-import RxCocoa
-
-class DelayedSingleHelloGenerator
-{
-    class func generate() -> Observable<String>
-    {
-        let delayedObservable = timer(3, MainScheduler.sharedInstance)
-        
-        let helloObservable = delayedObservable.map({ (_) -> String in
-            return "hello"
-        })
-        
-        return helloObservable
-    }
-}
-
-class ViewController: UIViewController {
-
-    let disposeBag = DisposeBag()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        DelayedSingleHelloGenerator.generate().subscribeNext { (s) -> Void in
-            debugPrint(s)
-        }.addDisposableTo(disposeBag)
-    }
-}
 ```
 
 ### Discussion:
 
-Here, we use `func timer` to generate a single `Event` after a 3 second delay, which we then map to a "hello" message.
+Here, we use `func doOn` to produce a side-effect for each `Event` which propogates through the `Observable` chain.
 
-Start up the app and verify that you see a single "hello" after a 3 second delay:
+Start up the app and verify that you see a side-effect message for each "hello" message:
 
 ```
+"side-effect"
+"hello"
+"side-effect"
+"hello"
+"side-effect"
 "hello"
 ```
 
-The `timer` function also has a second interface which includes an initial delay value.  We can combine the functionality of lesson 3.6 and 3.7 together to generate an infinite stream of one-second interval "hello" messages which start after a 3 second delay:
-
 ```swift
-class DelayedTickHelloGenerator
-{
-    class func generate() -> Observable<String>
-    {
-        let tickerObservable = timer(3.0, 1.0, MainScheduler.sharedInstance)
-        
-        let helloObservable = tickerObservable.map { (_) -> String in
-            return "hello"
-        }
-        
-        return helloObservable
-    }
-}
+FIXME create a sideEffect function alias here
 ```
 
 ### New concepts to explore
 
 * Open up `RxExample.xcodeproj`.
-  * Take a look at `func timer` in `Observable+Creation.swift`
+  * Take a look at `func doOn` in `Observable+Creation.swift`
 
 ### Solution project
 
