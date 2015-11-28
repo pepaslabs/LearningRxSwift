@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxSwiftUIScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1G7-eJ-sw9">
+                                <rect key="frame" x="0.0" y="20" width="600" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbo-DA-OoJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="980"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="980" id="62l-9d-rJm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.21497723199999999" blue="0.27228168629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zbo-DA-OoJ" secondAttribute="trailing" id="3MH-JT-MIQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zbo-DA-OoJ" secondAttribute="bottom" id="N88-I2-eLU"/>
+                                    <constraint firstItem="Zbo-DA-OoJ" firstAttribute="leading" secondItem="1G7-eJ-sw9" secondAttribute="leading" id="VyA-Kv-FZz"/>
+                                    <constraint firstItem="Zbo-DA-OoJ" firstAttribute="top" secondItem="1G7-eJ-sw9" secondAttribute="top" id="k3i-yn-6C3"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tt0-d3-qPP">
+                                <rect key="frame" x="538" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1G7-eJ-sw9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5fi-eS-T3E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1G7-eJ-sw9" secondAttribute="bottom" id="8ie-KM-7ZM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tt0-d3-qPP" secondAttribute="trailing" id="CAe-2X-VYE"/>
+                            <constraint firstItem="Zbo-DA-OoJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="KTo-zP-Buy"/>
+                            <constraint firstItem="Tt0-d3-qPP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jdp-CA-jAv"/>
+                            <constraint firstAttribute="trailing" secondItem="1G7-eJ-sw9" secondAttribute="trailing" id="vLd-iR-z3I"/>
+                            <constraint firstItem="1G7-eJ-sw9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="x8d-fk-67U"/>
+                            <constraint firstItem="1G7-eJ-sw9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xsx-oF-dcX"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
+                    <connections>
+                        <outlet property="contentView" destination="Zbo-DA-OoJ" id="Sr0-A7-mQB"/>
+                        <outlet property="label" destination="Tt0-d3-qPP" id="urJ-8d-ERE"/>
+                        <outlet property="scrollView" destination="1G7-eJ-sw9" id="enO-cS-WYI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
