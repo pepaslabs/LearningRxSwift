@@ -28,6 +28,9 @@ Chapter 4:
 * [Lesson 4.1: `view.backgroundColor` set by `Reachability` status](lesson4.1_reachability)
 * [Lesson 4.2: `BehaviorSubject`](lesson4.2_behaviorsubject)
 
+Chapter 5:
+
+* [Lesson 5.1: `UIScrollView.rx_contentOffset`](lesson5.1_uiscrollview_rxcontentOffset)
 
 todo:
 * scopedDispose
