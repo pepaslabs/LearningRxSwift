@@ -44,7 +44,6 @@ todo:
 * distinctUntilChanged
 * Driver<Element>
 * UIScrollView.rx_delegate
-* UIScrollView.rx_contentOffset
 * ReplaySubject
 
 
