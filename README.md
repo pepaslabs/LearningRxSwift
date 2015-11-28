@@ -34,4 +34,5 @@ todo:
 * takeUntil
 * deferred
 * flatMap
-* refactor repo title and all chapter titles to be "katas"?
+* Driver<Element>
+
