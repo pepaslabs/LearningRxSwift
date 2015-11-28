@@ -1,4 +1,4 @@
-# Lesson 5.1: UIScrollView.rx_contentOffset
+# Lesson 5.1: `UIScrollView.rx_contentOffset`
 
 ## Problem statement
 
