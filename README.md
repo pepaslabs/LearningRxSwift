@@ -34,5 +34,11 @@ todo:
 * takeUntil
 * deferred
 * flatMap
+* flatMapLatest
+* throttle
+* empty
+* distinctUntilChanged
 * Driver<Element>
+* UIScrollView.rx_delegate
+* UIScrollView.rx_contentOffset
 
