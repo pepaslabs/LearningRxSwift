@@ -47,7 +47,7 @@ class ViewController: UIViewController
 
 ### Discussion:
 
-We subscribe to `scollViews`'s `rx_contentOffset` property and update the label's text to display the contentOffset.
+We subscribe to the scollViews's `rx_contentOffset` property and update the label's text to display the `contentOffset`.
 
 ### New concepts to explore
 
