@@ -7,6 +7,8 @@ Make an app which:
 * Prints "didEnterBackground" to the console when the app is backgrounded.
 * Prints "willEnterForeground" to the console when the app is resumed.
 
+![screen shot](https://raw.githubusercontent.com/pepaslabs/LearningRxSwift/master/lesson5.2_rx_notification/.media/Screen%20Shot%202015-11-28%20at%209.09.04%20PM.png)
+
 ### Problem project
 
 You can use the project in the [problem](problem) folder of this repo as a starting point.
