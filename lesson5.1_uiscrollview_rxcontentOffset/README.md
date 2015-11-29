@@ -4,8 +4,8 @@
 
 Make an app which:
 
-* Has a UIScrollView, with a content view which can scroll vertically.
-* Has a label which displays the scroll view's contentOffset in real-time.
+* Has a `UIScrollView`, with a content view which can scroll vertically.
+* Has a label which displays the scroll view's `contentOffset` in real-time.
 
 ![screen shot](https://raw.githubusercontent.com/pepaslabs/LearningRxSwift/master/lesson5.1_uiscrollview_rxcontentOffset/.media/Screen%20Shot%202015-11-28%20at%209.11.56%20PM.png)
 
