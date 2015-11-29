@@ -32,6 +32,7 @@ Chapter 5:
 
 * [Lesson 5.1: `UIScrollView.rx_contentOffset`](lesson5.1_uiscrollview_rxcontentOffset)
 * [Lesson 5.2: `NSNotificationCenter.rx_notification`](lesson5.2_rx_notification)
+* [Lesson 5.3: `NSLayoutConstraint.rx_constant`](lesson5.3_rx_constant)
 
 todo:
 * scopedDispose
