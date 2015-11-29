@@ -10,6 +10,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+extension NSLayoutConstraint
+{
+    var rx_constant: Observable<CGFloat?> {
+        return rx_observeWeakly(CGFloat.self, "constant")
+    }
+}
+
 class ViewController: UIViewController
 {
     @IBOutlet weak var contentView: UIView!
@@ -43,7 +50,7 @@ class ViewController: UIViewController
             }
             .addDisposableTo(disposeBag)
         
-        topMarginConstraint.rx_observeWeakly(CGFloat.self, "constant")
+        topMarginConstraint.rx_constant
             .subscribeNext { [weak self] (constant) -> Void in
                 self?._synchronizeMarginConstants()
                 self?._updateLabel()
