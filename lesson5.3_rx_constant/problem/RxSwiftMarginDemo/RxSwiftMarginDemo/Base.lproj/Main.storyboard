@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxSwiftMarginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vws-lD-TVu">
+                                <rect key="frame" x="20" y="40" width="560" height="496"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJh-EJ-ESB">
+                                        <rect key="frame" x="259" y="237" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vJh-EJ-ESB" firstAttribute="centerY" secondItem="Vws-lD-TVu" secondAttribute="centerY" id="4j4-7n-3vP"/>
+                                    <constraint firstItem="vJh-EJ-ESB" firstAttribute="centerX" secondItem="Vws-lD-TVu" secondAttribute="centerX" id="IkP-10-iiX"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NE3-5t-I5b">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cNT-N4-iV0"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pxi-xo-ftK"/>
+                                    <barButtonItem title="Shrink Margin" id="YO5-HB-CQr"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7PX-tS-l39"/>
+                                    <barButtonItem title="Expand Margin" id="wCx-lq-zjL"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Fo9-Oq-idT"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NE3-5t-I5b" firstAttribute="top" secondItem="Vws-lD-TVu" secondAttribute="bottom" constant="20" id="JEJ-nt-0wi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NE3-5t-I5b" secondAttribute="bottom" id="JMi-4p-QEo"/>
+                            <constraint firstItem="Vws-lD-TVu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ONk-7W-1hB"/>
+                            <constraint firstItem="Vws-lD-TVu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="dfx-VZ-Nuz"/>
+                            <constraint firstItem="NE3-5t-I5b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dgG-TV-TJG"/>
+                            <constraint firstAttribute="trailing" secondItem="Vws-lD-TVu" secondAttribute="trailing" constant="20" id="eX0-K5-5N5"/>
+                            <constraint firstAttribute="trailing" secondItem="NE3-5t-I5b" secondAttribute="trailing" id="gZK-wW-YjL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomMarginConstraint" destination="JEJ-nt-0wi" id="cvo-op-i2f"/>
+                        <outlet property="contentView" destination="Vws-lD-TVu" id="W6k-JF-KpO"/>
+                        <outlet property="expandMarginButton" destination="wCx-lq-zjL" id="MPb-88-xnD"/>
+                        <outlet property="label" destination="vJh-EJ-ESB" id="fRL-m4-puD"/>
+                        <outlet property="leadingMarginConstraint" destination="dfx-VZ-Nuz" id="WRU-rG-rsf"/>
+                        <outlet property="shrinkMarginButton" destination="YO5-HB-CQr" id="SNF-4s-Oh0"/>
+                        <outlet property="topMarginConstraint" destination="ONk-7W-1hB" id="tTv-up-6BB"/>
+                        <outlet property="trailingMarginConstraint" destination="eX0-K5-5N5" id="w6B-bx-zas"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
