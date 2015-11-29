@@ -107,7 +107,31 @@ class ViewController: UIViewController
 
 ### Discussion:
 
-FIXME
+We subscribe to `rx_tap` on both the shrink and expand margin button items.  In these subscriptions we trigger the side-effect of decreasing or increasing the `topMarginConstraint.constant` by 5 points.
+
+We also subscribe (via KVO) to changes in the value of `topMarginConstraint.constant`, and use this event to update the other margin constraint constants to match.  Additionally, we update the label to reflect the new margin value.
+
+However, observing the constant changes via KVO (`observeWeakly`) isn't quite a clean as the solution to [Lesson 5.1](../lesson5.1_uiscrollview_rxdelegate), where `UIScrollView` had a `rx_contentOffset` property which was directly observable.  We can make our solution a bit more idiomatic to RxSwift by implementing `rx_constant` on `NSLayoutConstraint`, like so:
+
+```swift
+extension NSLayoutConstraint
+{
+    var rx_constant: Observable<CGFloat?> {
+        return rx_observeWeakly(CGFloat.self, "constant")
+    }
+}
+```
+
+We then update our subscription to use this property:
+
+```swift
+        topMarginConstraint.rx_constant
+            .subscribeNext { [weak self] (constant) -> Void in
+                self?._synchronizeMarginConstants()
+                self?._updateLabel()
+            }
+            .addDisposableTo(disposeBag)
+```
 
 ### New concepts to explore
 
