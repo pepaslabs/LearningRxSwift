@@ -10,6 +10,8 @@ Make an app which:
   * The "Shrink Margin" button increases the constraint constants by 5
 * Has a label which indicates the size of the margin
 
+![screen shot](https://raw.githubusercontent.com/pepaslabs/LearningRxSwift/master/lesson5.3_rx_constant/.media/Screen%20Shot%202015-11-28%20at%208.49.17%20PM.png)
+
 ### Problem project
 
 You can use the project in the [problem](problem) folder of this repo as a starting point.
